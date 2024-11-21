@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html style="background-color:#d1ffdb">
+  <head>
+    <meta charset="UTF-8">
+    <title>Avendaño Sofia 01D63</title>
+  </head>
+  <body>
+    <h1 style="color:DarkGreen">Validación de datos en Excel</h1>
+    <hr>
+    <h2 style="color:LimeGreen">¿Qué es?</h2>
+    <p>La validación de datos es una función de excel que permie establecer que solo ciertos datos específicos puedan ser ingresados en una celda o grupo de celdas.De esta manera se limita el ingeso de números, decimales, fecha, hora y texto.</p>
+   <p>Para establecer la validación de datos se deben determinar directrices para establecer cantidades mínimas y máximas, omitir intervalos numéricos, fechas u horas, o limitar a cifras iguales, mayores o menores a un valor específico.</p>
+    <p>Además se pueden establecer las indicaciones o condiciones de los datos a ingresar con el <b>mensaje de entrada</b>, así mismo se puede describir porque no se permite el ingreso de ciertos datos con el <b>mensaje de error</b>.</p>
+    <h2 style="color:LimeGreen">Opciones de validación de datos en Excel:</h2>
+    <ul>
+      <li><b style="color:DarkOliveGreen">Número entero:</b> Se usa para valores numéricos cerrados, se aplica para el formato general y de número.</li>
+      <li><b style="color:DarkOliveGreen">Decimal:</b> Solo permite el ingreso de números decimales, se aplica para los formatos de número, porcentaje, contabilidad, moneda y general.</li>
+      <li><b style="color:DarkOliveGreen">Lista:</b> Establece un listado específico permitiendo el ingreso únicamente de los datos presentes en este listado ya sean datos númericos, texto o ambos.</li>
+      <li><b style="color:DarkOliveGreen">Fecha:</b> Delimita el ingreso de datos a solo fechas específicas ya sea en formato corto o largo.</li>
+      <li><b style="color:DarkOliveGreen">Hora:</b> Limita el ingreso de datos a solo horarios específicos.</li>
+      <li><b style="color:DarkOliveGreen">Longitud de texto:</b> Delimita el número de caracteres de texto que se pueden ingresar en una celda.</li>
+      <li><b style="color:DarkOliveGreen">Perzonalizada:</b> Permite establecer fórmulas particulares para delimitar el ingreso de los datos.</li>
+    </ul>
+    <h2 style="color:LimeGreen">Condiciones en la validación de datos:</h2>
+    <ul>
+      <li><b style="color:DarkOliveGreen">Entre:</b> Establece un intervalo con una cigra mínima y una cifra máxima.</li>
+      <li><b style="color:DarkOliveGreen">No está entre:</b> Omite un intervalo, se indica dónde empieza y dónde termina el intervalo.</li>
+      <li><b style="color:DarkOliveGreen">Igual a:</b> Permite el ingreso de un único valor.</li>
+      <li><b style="color:DarkOliveGreen">No igual a:</b> Descarta un valor específico.</li>
+      <li><b style="color:DarkOliveGreen">Mayor que:</b> Permite únicamente valores superiores al indicado.</li>
+      <li><b style="color:DarkOliveGreen">Menor que:</b> Permite únicamente valores inferiores al indicado.</li>
+      <li><b style="color:DarkOliveGreen">Mayor o igual a que:</b> Acepta valores iguales o superiores al valor indicado.</li>
+      <li><b style="color:DarkOliveGreen">Menor o igual a que:</b> Acepta valores iguales o inferiores al valor indicado.</li>
+    </ul>
+    <h2 style="color:LimeGreen">¿Cómo realizar la validación de datos?</h2>
+    <ol>
+      <li><b style="color:DarkOliveGreen">Seleccionar las celdas:</b>Para explicar los pasos de la validación se usará el siguiente ejemplo. En un restaurante pequeño cada semana se realiza la compra de los ingredientes con menos stock, pero el chef ejecutivo estableció que no se pueden comprar mas de 30 unidades de cada ingrediente, para ello se usará una validación de datos para las unidades a comprar. Para esto se inicia seleccionando las celdas para aplicar la validación. <br> <img src="paso 1.PNG">
+</li> 
+      <li><b style="color:DarkOliveGreen">Hacer clic en "Validación de datos":</b> En el menú superior encontrarás la pestaña de "Datos", allí se encuntra el icono de una tabla con un símbolo de check verde que es el de validación de datos, al dar click ahí se abrirá un recuadro. <br> <img src="paso 2.PNG" width="480" height="380"></li>
+      <li><b style="color:DarkOliveGreen">Configurar el tipo de datos:</b> En la pestaña de configuración del nuevo recuadro seleccionar "Permitir" se desplegará una lista en la que seleccionaremos para este ejemplo la opción de "Número entero". <br> <img src="paso 3.PNG"> <br> Luego aparecerán nuevas opciones en donde seleccionaremos el rango o condición a utilizar, en este caso "menor o igual que". A continuación indicaremos el valor de referencia, en este ejemplo "30". <br> <img src="paso 3.2.PNG"> <img src="paso 3.3.PNG"></li>
+      <li><b style="color:DarkOliveGreen">Establecer el "mensaje de entrada":</b> En el recaudro seleccionar la pestaña de "mensaje de entrada", allí aparecerán dos espacios, uno pide el título y el otro pide el mensaje de entrada, este mensaje aparecerá cada vez que se de clic en una de las celdas seleccionadas. El mensaje debe contener instrucciones claras y sencillas. <br> <img src="paso 4.PNG"></li>
+      <li><b style="color:DarkOliveGreen">Establecer el "mensaje de error":</b> Lo último por completar es la pestaña de "mensaje de error", allí se redactará un breve mensaje para aquellos que ingresen los datos de forma incorrecta. En la pestaña de "Estilo" aparecen 3 opciones, "alto" que no permitirán de ninguna forma ingresar datos que no cumplan con lo establecido en la validación de datos, "advertencia" y "información" que notificarán que hay un error en los datos, pero sí dejará ingresar los datos a la celda. Al igual que en el mensaje de entrada el mensaje debe ser claro y sencillo. <br> <img src="paso 5.PNG"> <br> Al finalizar estos pasos damos clic en "Aceptar".</li>
+      <li><b style="color:DarkOliveGreen">Verificar la validación:</b> El último paso es comprobar que la validación qeudó aplicada correctamente. Para esto ingresaremos que no se ajuste a las condiciones dadas, para el ejemplo, un dato mayor a 30, inmediatamente arrojará un recuadro con el mensaje de error. <br> <img src="paso 6.PNG"> </li>
+    </ol>
+    <hr>
+    <h2 style="color:DarkGreen">Realizado por: Danna Sofia Avendaño Riaño 01D63</h2>
+  </body>
+</html>
+    
